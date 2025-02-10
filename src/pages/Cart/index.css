@@ -1,0 +1,21 @@
+.cart-page {
+    background-color: #f5f7fa;
+    min-height: 100vh;
+    .cart-container {
+        width: 1500px;
+        margin: 0 auto;
+
+        .cart-select-all {
+            display: flex;
+            align-items: center;
+
+        }
+
+        .cart-items {
+            .cart-item {
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+}

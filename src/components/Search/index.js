@@ -15,10 +15,11 @@ export default function Search() {
         <div className="search-wrapper">
             <div className="search">
                 <input type="text"
+                    className="search-input"
                     placeholder="Search"
                     onFocus={() => setFocusing(true)}
                     onBlur={() => setFocusing(false)} />
-                <div className='button' onClick={handleToSearchPage}>搜寻</div>
+                <div className='search-bt' onClick={handleToSearchPage}>搜寻</div>
             </div>
 
             <div className="keys">

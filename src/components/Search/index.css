@@ -10,7 +10,7 @@
         background-color: #F5F7FA;
         position: relative;
 
-        input {
+        .search-input {
             height: 46px;
             width: 800px;
             border: none;
@@ -22,7 +22,7 @@
             background-color: #F5F7FA;
         }
 
-        .button {
+        .search-bt{
             position: absolute;
             right: 6px;
             top: 6px;

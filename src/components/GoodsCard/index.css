@@ -39,3 +39,44 @@
         }
     }
 }
+
+.goods-card-type2 {
+    display: flex;
+    align-items: center;
+
+    .cover {
+        width: 70px;
+        height: 70px;
+        border-radius: 10px;
+
+        img {
+            width: 100%;
+
+        }
+
+    }
+
+    .info {
+        margin-left: 15px;
+        display: flex;
+
+        .name {
+            font-size: 14px;
+            color: #1F2022;
+        }
+
+        .unit {
+            margin-left: 81px;
+            font-size: 16px;
+            font-weight: 600;
+            color: #FE2E00;
+        }
+
+        .value {
+            margin-left: 10px;
+            font-size: 16px;
+            font-weight: 600;
+            color: #FE2E00;
+        }
+    }
+}

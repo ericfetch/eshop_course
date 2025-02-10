@@ -5,11 +5,13 @@ import BannerHomeSwiper from '../../components/BannerHomeSwiper';
 import BannerTwos from '../../components/BannerTwos';
 import UserLogin from '../../components/UserLogin';
 import GoodsCard from '../../components/GoodsCard';
+import CartSuspend from '../../components/CartSuspend';
 
 export default function Home() {
 
     return (
         <>
+            <CartSuspend/>
             <Head></Head>
             <div className="home-content">
                 <div className="function-area">

@@ -9,6 +9,7 @@ import goods02 from '../../assets/goods02.png'
 import './index.css'
 import Tabs from '../../components/Tabs'
 import NumOperation from "../../components/NumOperation";
+import CartSuspend from "../../components/CartSuspend";
 
 export default function GoodsDetail() {
     const [tabIndex, setTabIndex] = useState(0);
@@ -19,6 +20,7 @@ export default function GoodsDetail() {
 
     return (
         <div className="goods-detail">
+            <CartSuspend/>
             <div className='head-container'>
                 <Head logoType={2}></Head>
             </div>
