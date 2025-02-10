@@ -8,6 +8,7 @@ import goods02 from '../../assets/goods02.png'
 
 import './index.css'
 import Tabs from '../../components/Tabs'
+import NumOperation from "../../components/NumOperation";
 
 export default function GoodsDetail() {
     const [tabIndex, setTabIndex] = useState(0);
@@ -40,11 +41,7 @@ export default function GoodsDetail() {
                             </div>
                             <div className="buyNum">
                                 <span>数量：</span>
-                                <div class="numOperation">
-                                    <div className='num-btn'>-</div>
-                                    <div>1</div>
-                                    <div className='num-btn'>+</div>
-                                </div>
+                               <NumOperation/>
                             </div>
                             <div className='buy-btn'>加入购物车</div>
                         </div>

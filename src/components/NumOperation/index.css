@@ -1,0 +1,15 @@
+.numOperation {
+    margin-left: 12px;
+    display: flex;
+    width: 130px;
+    height: 40px;
+    border-radius: 4px;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #F5F7FA;
+
+    .num-btn {
+        font-size: 24px;
+        cursor: pointer;
+    }
+}
