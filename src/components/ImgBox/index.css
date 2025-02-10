@@ -1,0 +1,19 @@
+.img-box-swiper {
+    height: 76px;
+    width: 460px;
+    overflow-x: scroll;
+    .img-box-swiper-item {
+        width: 76px;
+        height: 76px;
+        border-radius: 15px;
+        overflow: hidden;
+        img{
+            width: 76px;
+        }
+    }
+}
+
+::-webkit-scrollbar {
+    width: 0;  /* 隐藏垂直滚动条 */
+    height: 0; /* 隐藏水平滚动条 */
+}

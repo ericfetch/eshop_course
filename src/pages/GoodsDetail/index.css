@@ -1,0 +1,109 @@
+.goods-detail {
+    .detail-content {
+        width: 1500px;
+        margin: 0 auto;
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+
+        .goods-info {
+
+            display: flex;
+
+            .goods-img {
+                width: 460px;
+                height: 556px;
+            }
+
+            .goods-sku {
+                padding: 0 30px;
+                box-sizing: border-box;
+
+                .name {
+                    color: #1F2022;
+                    font-size: 22px;
+                    font-weight: 600;
+                }
+
+                .sales {
+                    margin-top: 12px;
+                    color: #707379;
+                    font-size: 16px;
+                    font-weight: 400;
+                }
+
+                .price {
+                    margin-top: 12px;
+                    padding: 20px;
+                    background-color: #F5F7FA;
+                    color: #FE2E00;
+                    font-weight: 600px;
+                    border-radius: 15px;
+
+                    .market-price-label {
+                        font-size: 14px;
+                    }
+
+                    .unit {
+                        font-size: 26px;
+                    }
+
+                    .price-num {
+                        font-size: 26px;
+                    }
+
+                    .original-price {
+                        margin-top: 12px;
+                        font-size: 16px;
+                        color: #A4A8B1;
+                        font-weight: 400px;
+                    }
+
+                }
+
+                .buyNum {
+                    margin-top: 50px;
+                    font-size: 14px;
+                    color: #707379;
+                    display: flex;
+                    align-items: center;
+
+                    .numOperation {
+                        margin-left: 12px;
+                        display: flex;
+                        width: 130px;
+                        height: 40px;
+                        border-radius: 4px;
+                        justify-content: space-around;
+                        align-items: center;
+                        background-color: #F5F7FA;
+
+                        .num-btn {
+                            font-size: 24px;
+                        }
+                    }
+                }
+
+                .buy-btn {
+                    margin-top: 50px;
+                    display: flex;
+                    width: 150px;
+                    height: 50px;
+                    padding: 8px 20px;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 999px;
+                    background: linear-gradient(90deg, #3630EC 0%, #C8379D 100%);
+                    color: #fff;
+                }
+            }
+        }
+        .goods-detail-render{
+            
+        }
+    }
+
+    .recommend-list {
+        margin-top: 20px;
+    }
+}

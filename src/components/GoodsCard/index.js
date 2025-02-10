@@ -3,10 +3,17 @@
 
 import './index.css'
 import goods01 from '../../assets/goods01.png'
-
+import { useNavigate } from 'react-router'
 export default function GoodsCard() {
+
+    const navigator = useNavigate();
+
+    const hanldeToDetailPage = () => {
+        // 跳轉到商品詳細頁面
+        navigator('/detail')
+    }
     return (
-        <div className="goods-card">
+        <div className="goods-card" onClick={hanldeToDetailPage}>
             <div className="cover">
                 <img src={goods01} alt="" />
             </div>

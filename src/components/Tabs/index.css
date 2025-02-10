@@ -1,0 +1,16 @@
+.tabs{
+    display: flex;
+    .tab{
+        height: 90px;
+        display: flex;
+        align-items: center;
+        font-size: 22px;
+        font-weight: 500;
+        margin-right: 30px;
+        color: #707379;
+    }
+    .active{
+        color: #1F2022;
+        font-weight: 600;
+    }
+}
