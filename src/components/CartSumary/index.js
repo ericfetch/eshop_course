@@ -1,8 +1,12 @@
 
 import './index.css'
 import goods01 from "../../assets/goods01.png";
-export default function CartSumary() {
+export default function CartSumary(props) {
+    const { onSubmit=()=>{} } = props;
 
+    const handleClick = () => { 
+        onSubmit()
+    }
     return (
         <div class="cart-sumary">
             <div className="first-row">
@@ -38,7 +42,7 @@ export default function CartSumary() {
                     <span>99999</span>
                 </div>
             </div>
-            <div className="submit-btn">结账去</div>
+            <div className="submit-btn" onClick={handleClick}>结账去</div>
         </div>
     )
 }

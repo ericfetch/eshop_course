@@ -1,8 +1,31 @@
+.do-order {
+    background-color: #f5f7fa;
+
+    .order-container {
+        display: flex;
+        justify-content: space-between;
+        min-height: 100vh;
+        width: 1500px;
+        margin: 0 auto;
+        display: flex;
+        background-color: #f5f7fa;
+        padding-top: 20px;
+
+        .left {
+            width: 1130px;
+           
+            .address-area,
+            .pay-area,
+            .invoice-area 
+            {
+                width: 1130px;
+                height: 379px;
+                background-color: #fff;
+                border-radius: 15px;
+                margin-bottom: 20px;
+            }
+        }
 
 
-.order-container{
-    display: flex;
-    .left{
-        width: 1130px;
     }
 }

@@ -24,7 +24,7 @@ root.render(
         <Route path='/search' element={<Search />}></Route>
         <Route path='/detail' element={<GoodsDetail />}></Route>
         <Route path='/cart' element={<Cart />}></Route>
-        <Route path='/do_order' element={<DoOrder />}></Route>
+        <Route path='/order' element={<DoOrder />}></Route>
       </Routes>
     </BrowserRouter>
   </Provider>

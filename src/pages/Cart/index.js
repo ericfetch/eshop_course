@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router";
 import CheckBox from "../../components/CheckBox";
 import Head from "../../components/Head";
 import GoodsCard from "../../components/GoodsCard";
@@ -7,6 +8,11 @@ import CartSuspend from "../../components/CartSuspend";
 import CartSumary from "../../components/CartSumary";
 import './index.css'
 export default function Cart() {
+    const navigator = useNavigate();
+
+    const handleSubmit = () => {
+       navigator('/order'); 
+    }
     return (
         <div className="cart-page">
             <CartSuspend />
@@ -53,7 +59,7 @@ export default function Cart() {
                     </div>
                 </div>
                 <div class="right">
-                   <CartSumary />
+                   <CartSumary onSubmit={handleSubmit} />
                 </div>
             </div>
         </div>
