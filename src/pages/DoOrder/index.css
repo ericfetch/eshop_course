@@ -1,0 +1,8 @@
+
+
+.order-container{
+    display: flex;
+    .left{
+        width: 1130px;
+    }
+}
