@@ -1,20 +1,110 @@
 .cart-page {
     background-color: #f5f7fa;
     min-height: 100vh;
+
     .cart-container {
         width: 1500px;
-        margin: 0 auto;
+        margin: 20px auto 0 auto;
+        display: flex;
+        justify-content: space-between;
 
-        .cart-select-all {
-            display: flex;
-            align-items: center;
+        .left {
+            width: 1130px;
+            background-color: #fff;
+            border-radius: 15px;
+            box-sizing: border-box;
+            padding: 30px;
 
-        }
-
-        .cart-items {
-            .cart-item {
+            .cart-select-all {
                 display: flex;
                 align-items: center;
+
+            }
+
+            .cart-items {
+                .cart-item {
+                    margin-top: 20px;
+                    display: flex;
+                    align-items: center;
+                }
+            }
+        }
+
+        .right {
+            width: 350px;
+            height: 356px;
+            background-color: #fff;
+            border-radius: 15px;
+            box-sizing: border-box;
+            padding: 30px;
+
+            .first-row {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 20px;
+
+                .title {
+                    font-size: 20px;
+                    font-weight: 600;
+                }
+
+                .des {
+                    color: #707379;
+
+                }
+            }
+
+            .second-row {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                grid-gap: 10px;
+                margin-bottom: 20px;
+
+                .goods-preview {
+                    width: 65px;
+                    height: 65px;
+                    border-radius: 5px;
+                    overflow: hidden;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                .more {
+                    box-sizing: border-box;
+                    font-size: 14px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: #F5F7FA;
+                    border: 1px solid #D8DCE3;
+                    padding: 4px;
+                }
+
+            }
+
+            .third-row {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 20px;
+
+                .price {
+                    font-size: 18px;
+                    font-weight: 600;
+                    color: #FE2E00;
+                }
+            }
+
+            .submit-btn {
+                display: flex;
+                height: 50px;
+                justify-content: center;
+                align-items: center;
+                border-radius: 10px;
+                color: #fff;
+                cursor: pointer;
+                background: linear-gradient(90deg, #3630EC 0%, #C8379D 100%);
             }
         }
     }

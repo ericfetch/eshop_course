@@ -8,7 +8,7 @@ export default function GoodsCard(props) {
         // 跳轉到商品詳細頁面
         navigator('/detail')
     }
-    
+
     return (
         <>
             {
