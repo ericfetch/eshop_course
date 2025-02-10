@@ -1,0 +1,11 @@
+.search-page {
+    .head-container{
+        border-bottom: 1px solid #ccc;
+    }
+    .search-list{
+        width: 1500px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+    }
+}

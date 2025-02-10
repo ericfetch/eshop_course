@@ -1,0 +1,14 @@
+.avatar {   
+
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    object-fit: cover;
+    object-position: center;
+    margin-right: 10px;
+    border: 2px solid #fff;
+    background-color: #F0F0FB
+    ;
+    filter: drop-shadow(0px 0px 14px rgba(0, 0, 0, 0.10));
+}

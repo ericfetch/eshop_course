@@ -1,0 +1,8 @@
+.home-layout-container{
+    min-height: 100vh;
+    background:url('../../assets/home_bg.png');
+    background-position-x: center;
+    background-repeat:no-repeat;
+    background-size: 1920px;
+    background-color: #f5f7fa;
+}   

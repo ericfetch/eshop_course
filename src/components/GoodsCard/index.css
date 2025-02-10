@@ -1,0 +1,41 @@
+.goods-card {
+    display: flex;
+    flex-direction: column;
+    width: 284px;
+    height: 411px;
+    background-color: #fff;
+    border-radius: 15px;
+
+    .name {
+        color: #1F2022;
+        font-size: 16px;
+        font-weight: 400;
+        padding: 0 20px;
+        margin-top: 15px;
+    }
+
+    .sales {
+        margin-top: 6px;
+        color: #707379;
+        font-size: 12px;
+        padding: 0 20px;
+    }
+
+    .price {
+        margin-top: 10px;
+        padding: 0 20px;
+
+        .unit {
+            color: #FE2E00;
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        .value {
+            margin-left: 5px;
+            color: #FE2E00;
+            font-size: 20px;
+            font-weight: 600;
+        }
+    }
+}

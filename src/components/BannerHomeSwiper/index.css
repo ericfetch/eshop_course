@@ -1,0 +1,19 @@
+.mySwiper{
+    width: 860px;
+    border-radius: 15px;
+    overflow: hidden;
+    .custom-swiper-pagination-bullet{
+        display: inline-block;
+        background:rgba(255, 255, 255, 0.5);
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        margin-right: 5px;
+    }
+    .custom-swiper-pagination-bullet-active{
+        background:#fff;
+        width: 30px;
+        height: 10px;
+        border-radius: 5px;
+    }
+}

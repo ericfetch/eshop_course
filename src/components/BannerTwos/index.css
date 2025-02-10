@@ -1,0 +1,21 @@
+.banner-twos {
+    margin-top: 20px;
+    width: 420px;
+    height: 210px;
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    box-sizing: border-box;
+    .title {
+        color: var(--, #1F2022);
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+    .banner-imgs{
+        display: flex;
+        justify-content: space-between;
+    }
+}

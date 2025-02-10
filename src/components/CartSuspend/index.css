@@ -1,0 +1,32 @@
+.cart-suspend {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    width: 70px;
+    height: 70px;
+    border-radius: 10%;
+    background-color: #fff;
+    font-size: 14px;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.10);
+    cursor: pointer;
+    .cart-icon{
+        width: 24px;
+    }
+    .suspend-count {
+        position: absolute;
+        top: -9px;
+        right: -10px;
+        border-radius: 20px;
+        background:  #F37500;
+        padding: 0 6px;
+        height: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

@@ -1,0 +1,28 @@
+.home-content{
+    width: 1500px;
+    margin: 20px auto;
+    .function-area{
+        width: 1500px;
+        display: flex;
+        justify-content: space-between;
+        .mid-area{
+            width: 860px;
+            margin: 0 20px;
+            box-sizing: content-box;
+            .banners-area{
+                width: 860px; 
+                display: flex;
+            }
+        }
+        
+    }
+    .recommend-area{
+        width: 1500px;
+        display: grid;
+        grid-template-columns: repeat(5,284px);
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+        justify-content: start;
+        margin-top: 20px;
+    }
+}
