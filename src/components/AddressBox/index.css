@@ -1,0 +1,45 @@
+.address-box {
+    width: 303px;
+    height: 69px;
+    padding: 20px;
+    border-radius: 10px;
+
+    border: 1px solid #D8DCE3;
+
+    .address-first {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .province {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .local-icon {
+            width: 20px;
+            margin-right: 8px;
+        }
+    }
+
+    .address {
+        margin-top: 8px;
+        font-size: 16px;
+        font-weight: 700;
+        color: #1F2022;
+        padding-left: 28px;
+    }
+
+    .contact {
+        margin-top: 8px;
+        padding-left: 28px;
+        font-size: 14px;
+        font-weight: 400;
+        color: #707379;
+    }
+}
+
+.active {
+    border: 1px solid #3630EC;
+}

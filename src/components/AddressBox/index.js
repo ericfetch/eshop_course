@@ -1,23 +1,33 @@
 import img_local from '../../assets/local.png'
 import img_del from '../../assets/del.png'
 import './index.css'
-export default function AddressBox() {
+export default function AddressBox(props) {
+    const { data = {}, active = false,onSelect = () => { } } = props;
 
+    const hanldeClick = () => {
+        onSelect()
+    }
     return (
-        <div className="address-box">
-            <div class="first">
-                <img src={img_local} alt="" />
+        <div
+            onClick={hanldeClick}
+            className={`address-box ${active ? 'active' : ''}`}>
+            <div class="address-first">
+
                 <div class="province">
-                    台南市 中西区
+                    <img className='local-icon' src={img_local} alt="" />
+                    <div>{data.name}</div>
                 </div>
+
                 <img src={img_del} alt="" />
 
             </div>
 
-            <div class="address">敬業三路 888 巷 77 弄 20號 5 樓之 2</div>
+            <div class="address">
+                {data.address}
+            </div>
 
             <div class="contact">
-                王小明 0912345678
+                {data.contact}
             </div>
 
         </div>

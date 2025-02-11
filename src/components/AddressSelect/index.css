@@ -1,0 +1,46 @@
+.address-select {
+    padding: 30px;
+    box-sizing: border-box;
+    .first{
+        display: flex;
+        align-items: center;
+        justify-content: space-between; 
+        margin-bottom: 20px;
+    }
+    .empty {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .address-title{
+        font-size: 20px;
+        font-weight: 600;
+        color: #1F2022;
+    }
+
+    .address-add {
+        width: 216px;
+        height: 44px;
+        border-radius: 4px;
+        background-color: #F5F7FA;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        margin-top: 15px;
+
+    }
+    .small{
+        width: 105px;
+        font-size: 14px;
+        height: 30px;
+    }
+    .address-list{
+        display: grid ;
+        grid-template-columns: repeat(3,1fr);
+        grid-gap: 20px;
+    }
+
+}
