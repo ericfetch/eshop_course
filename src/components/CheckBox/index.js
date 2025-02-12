@@ -12,7 +12,7 @@ export default function CheckBox(props) {
                 checked ? (
                     <img className='checked' src={img_check_active} alt="check" onClick={() => setChecked(false)} />
 
-                ) : (<div class="unchecked" onClick={() => setChecked(true)}></div>)
+                ) : (<div className="unchecked" onClick={() => setChecked(true)}></div>)
             }
         </div>
     )

@@ -38,10 +38,10 @@ export default function AddressSelect() {
     }
     return (
         <div className="address-select">
-            <div class="first">
+            <div className="first">
                 <div className="address-title">收货地址</div>
-                <div class="address-add small">
-                    <img src={add_icon} alt="" srcset="" />
+                <div className="address-add small">
+                    <img src={add_icon} alt="" />
                     <span style={{ marginLeft: "10px" }}>新增地址</span>
                 </div>
             </div>
@@ -59,9 +59,9 @@ export default function AddressSelect() {
                         }
                     </div>
                     : <div className="empty">
-                        <img src={img_default_local} alt="" srcset="" />
+                        <img src={img_default_local} alt=""  />
                         <div className="address-add">
-                            <img src={add_icon} alt="" srcset="" />
+                            <img src={add_icon} alt=""  />
                             <span style={{ marginLeft: "10px" }}>新增地址</span>
                         </div>
                     </div>

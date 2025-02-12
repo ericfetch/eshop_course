@@ -37,7 +37,7 @@ export default function CateSelect() {
             }
             {
                 isOpen && (
-                    <div class="cate-select-pannel">
+                    <div className="cate-select-pannel">
                         <div className='cate-select-pannel-title'>电脑</div>
                         <div className='cate-select-pannel-item'>笔记本</div>
                     </div>

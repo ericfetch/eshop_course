@@ -8,7 +8,7 @@ export default function CartSumary(props) {
         onSubmit()
     }
     return (
-        <div class="cart-sumary">
+        <div className="cart-sumary">
             <div className="first-row">
                 <div className="title">明细</div>
                 <div className="des">
@@ -19,18 +19,18 @@ export default function CartSumary(props) {
             </div>
             <div className="second-row">
                 <div className="goods-preview">
-                    <img src={goods01} alt="" srcset="" />
+                    <img src={goods01} alt=""  />
                 </div><div className="goods-preview">
-                    <img src={goods01} alt="" srcset="" />
+                    <img src={goods01} alt=""  />
                 </div>
                 <div className="goods-preview">
-                    <img src={goods01} alt="" srcset="" />
+                    <img src={goods01} alt=""  />
                 </div>
                 <div className="goods-preview">
-                    <img src={goods01} alt="" srcset="" />
+                    <img src={goods01} alt=""  />
                 </div>
                 <div className="goods-preview">
-                    <img src={goods01} alt="" srcset="" />
+                    <img src={goods01} alt=""  />
                 </div>
                 <div className="goods-preview more">
                     等20件商品

@@ -20,7 +20,7 @@
             {
                 
                 width: 1130px;
-                height: 379px;
+                min-height: 379px;
                 background-color: #fff;
                 border-radius: 15px;
                 margin-bottom: 20px;

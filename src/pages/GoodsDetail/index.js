@@ -24,16 +24,16 @@ export default function GoodsDetail() {
             <div className='head-container'>
                 <Head logoType={2}></Head>
             </div>
-            <div class="detail-content">
-                <div class="left">
-                    <div class="goods-info">
-                        <div class="goods-img">
+            <div className="detail-content">
+                <div className="left">
+                    <div className="goods-info">
+                        <div className="goods-img">
                             <ImgBox data={[{ src: goods02, alt: '商品名稱' }]}></ImgBox>
                         </div>
-                        <div class="goods-sku">
-                            <div class="name">一個很長的商品名稱，我也不知道會有多長，但就是有可能會很長就對了，如果真的很長最多就是這麼長。</div>
-                            <div class="sales">已售 9999999</div>
-                            <div class="price">
+                        <div className="goods-sku">
+                            <div className="name">一個很長的商品名稱，我也不知道會有多長，但就是有可能會很長就對了，如果真的很長最多就是這麼長。</div>
+                            <div className="sales">已售 9999999</div>
+                            <div className="price">
                                 <span className='market-price-label'>特价</span>
                                 <span className='unit'>TWD</span>
                                 <span className='price-num'>2323232</span>
@@ -48,19 +48,19 @@ export default function GoodsDetail() {
                             <div className='buy-btn'>加入购物车</div>
                         </div>
                     </div>
-                    <div class="goods-detail-render">
+                    <div className="goods-detail-render">
                         <Tabs onChange={handleTabChange} data={['商品详情', '商品评价']} />
-                        <div class="content">
+                        <div className="content">
                             {
-                                tabIndex === 0 && <div class="tab-content">
-                                    <div class="desc">
+                                tabIndex === 0 && <div className="tab-content">
+                                    <div className="desc">
                                         <p>商品详情</p> <br />
                                     </div>
                                 </div>
                             }
                             {
-                                tabIndex === 1 && <div class="tab-content">
-                                    <div class="desc">
+                                tabIndex === 1 && <div className="tab-content">
+                                    <div className="desc">
                                         <p>商品评价</p> <br />
                                     </div>
                                 </div>
@@ -68,8 +68,8 @@ export default function GoodsDetail() {
                         </div>
                     </div>
                 </div>
-                <div class="right">
-                    <div class="title">你也许会喜欢^</div>
+                <div className="right">
+                    <div className="title">你也许会喜欢^</div>
                     <div className='recommend-list'>
                         <GoodsCard></GoodsCard>
                     </div>

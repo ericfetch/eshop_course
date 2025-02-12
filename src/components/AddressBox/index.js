@@ -11,9 +11,9 @@ export default function AddressBox(props) {
         <div
             onClick={hanldeClick}
             className={`address-box ${active ? 'active' : ''}`}>
-            <div class="address-first">
+            <div className="address-first">
 
-                <div class="province">
+                <div className="province">
                     <img className='local-icon' src={img_local} alt="" />
                     <div>{data.name}</div>
                 </div>
@@ -22,11 +22,11 @@ export default function AddressBox(props) {
 
             </div>
 
-            <div class="address">
+            <div className="address">
                 {data.address}
             </div>
 
-            <div class="contact">
+            <div className="contact">
                 {data.contact}
             </div>
 

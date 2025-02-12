@@ -20,7 +20,7 @@ export default function Cart() {
                 <Head logoType={2} />
             </div>
             <div className="cart-container">
-                <div class="left">
+                <div className="left">
                     <h1>全部商品(35)</h1>
                     <div className="cart-select-all">
                         <CheckBox />
@@ -58,7 +58,7 @@ export default function Cart() {
 
                     </div>
                 </div>
-                <div class="right">
+                <div className="right">
                    <CartSumary onSubmit={handleSubmit} />
                 </div>
             </div>

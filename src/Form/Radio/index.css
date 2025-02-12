@@ -1,0 +1,14 @@
+.form-radio {   
+    
+    .radio-checked {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        border: 1px solid #D8DCE3;
+        box-sizing: border-box;
+    }
+    img{
+        display: block;
+    }
+    
+}

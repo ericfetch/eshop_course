@@ -1,0 +1,43 @@
+.pay-select {
+    padding: 30px;
+
+    .pay-select-title {
+        color: #1F2022;
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .pay-select-form {
+        padding: 30px;
+        box-sizing: border-box;
+
+        .pay-select-card-radio {
+            display: flex;
+            align-items: center;
+
+            .pay-select-card-radio-label {
+                color: #1F2022;
+                font-size: 16px;
+                font-weight: 700;
+                margin-left: 10px;
+            }
+        }
+
+        .pay-select-card {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 10px;
+            margin-bottom: 20px;
+            padding: 30px 30px 0 30px;
+
+
+        }
+
+        .pay-select-card-note {
+            margin-top: 15px;
+            padding-left: 30px;
+            font-size: 14px;
+            color: #707379;
+        }
+    }
+}

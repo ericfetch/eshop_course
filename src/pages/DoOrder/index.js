@@ -1,25 +1,28 @@
 import AddressSelect from "../../components/AddressSelect";
 import CartSumary from "../../components/CartSumary";
 import Head from "../../components/Head";
+import PaySelect from "../../components/PaySelect";
 import './index.css'
 
 
 export default function DoOrder() {
     return (
         <div className="do-order">
-            <div class="head-container">
+            <div className="head-container">
                 <Head  logoType={2} />
             </div>
             <div className="order-container">
-                <div class="left">
+                <div className="left">
 
-                    <div class="address-area">
+                    <div className="address-area">
                         <AddressSelect />
                     </div>
-                    <div class="pay-area"></div>
-                    <div class="invoice-area"></div>
+                    <div className="pay-area">
+                        <PaySelect />
+                    </div>
+                    <div className="invoice-area"></div>
                 </div>
-                <div class="right">
+                <div className="right">
                     <CartSumary />
                 </div>
             </div>

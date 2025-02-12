@@ -11,8 +11,15 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-.head-container{
+
+.head-container {
   border-bottom: 1px solid #ccc;
   background-color: #fff;
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.10);
+}
+
+
+.required{
+  color: #FE2E00;
+  margin-left: 6px;
 }

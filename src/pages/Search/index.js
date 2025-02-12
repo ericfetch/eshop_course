@@ -12,7 +12,7 @@ export default function Search() {
                 <Head logoType={2}></Head>
             </div>
 
-            <div class="search-list">
+            <div className="search-list">
             <GoodsCard></GoodsCard>
             <GoodsCard></GoodsCard>
             <GoodsCard></GoodsCard>
