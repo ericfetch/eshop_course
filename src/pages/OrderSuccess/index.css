@@ -1,0 +1,30 @@
+.order-success{
+
+    .success-container{
+        width: 1500px;
+        min-height: 100vh;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 100px;
+        .success-icon{
+            width: 90px;
+        }
+    }
+    .btn{
+        margin-top: 50px;
+        right: 6px;
+        top: 6px;
+        height: 34px;
+        width: 80px;
+        background: linear-gradient(to right, #3630EC, #C8379D);
+        color: #fff;
+        line-height: 34px;
+        ;
+        text-align: center;
+        border-radius: 25px;
+        cursor: pointer;
+        padding: 0 20px;
+    }
+}

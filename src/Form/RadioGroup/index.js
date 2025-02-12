@@ -1,6 +1,5 @@
 
 import React, { useState } from "react";
-import useRadioGroupA from "./useRadioGroup.js";
 import "./index.css";
 
 export default function RadioGroup(props) {

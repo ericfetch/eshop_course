@@ -12,6 +12,7 @@ import Search from './pages/Search';
 import GoodsDetail from './pages/GoodsDetail';
 import Cart from './pages/Cart';
 import DoOrder from './pages/DoOrder';
+import OrderSuccess from './pages/OrderSuccess';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -25,6 +26,7 @@ root.render(
         <Route path='/detail' element={<GoodsDetail />}></Route>
         <Route path='/cart' element={<Cart />}></Route>
         <Route path='/order' element={<DoOrder />}></Route>
+        <Route path='/order/success' element={<OrderSuccess />}></Route>
       </Routes>
     </BrowserRouter>
   </Provider>
