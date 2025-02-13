@@ -4,13 +4,13 @@ import useRadioGroup from "../../Form/RadioGroup/useRadioGroup.js"
 import useValidate from "../../Form/useValidate.js"
 import "./index.css"
 export default function PaySelect() {
-    const { register } = useRadioGroup();
-    const [InputCreditCard, value, errors] = useValidate(
+    const [register,value]  = useRadioGroup();
+    const [InputCreditCard, values, errors] = useValidate(
         <Input placeholder="xx-xx-xx" />,
         { required: true, creditCard: true }
     )
 
-    console.log(errors);
+    console.log(errors,value);
     return (
         <div className="pay-select">
             <div className="pay-select-title">付款方式</div>

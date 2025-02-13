@@ -3,10 +3,11 @@ import React, { useState } from "react";
 import "./index.css";
 
 export default function RadioGroup(props) {
-    const { children } = props
+    const { children,onChange =()=>{}} = props
     const [checkedIndex, setCheckedIndex] = useState(null);
     const handleRadioChange = (index) => {
         setCheckedIndex(index);
+        onChange(index);
     }
 
     return (

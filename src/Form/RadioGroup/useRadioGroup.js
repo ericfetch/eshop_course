@@ -3,9 +3,11 @@ import { useState } from "react"
 export default function useRadioGroup() {
     const instanceStore = []
     const [checked, setChecked] = useState(null)
+    const [value, setValue] = useState(null)
 
     const handleRadioChange = (id) => {
         setChecked(id)
+        setValue(instanceStore.indexOf(id))
     }
 
     const register = () => {
@@ -23,5 +25,5 @@ export default function useRadioGroup() {
         return propsTemp
 
     }
-    return { register }
+    return [register,value ]
 }

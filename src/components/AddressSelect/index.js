@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import AddressBox from "../AddressBox";
+import AddressModal from "../AddressModal";
 import img_default_local from "../../assets/img_default_location.png";
 import add_icon from "../../assets/plus_icon.png";
 import './index.css'
@@ -7,6 +8,7 @@ export default function AddressSelect() {
     const [data, setData] = useState([]);
     const [selected, setSelected] = useState(null);
     const [addressIndex,setAddressIndex]=useState(0)
+    const [addVisible, setAddVisible] = useState(false);
     useEffect(() => {
         setData([
             {
@@ -42,7 +44,7 @@ export default function AddressSelect() {
                 <div className="address-title">收货地址</div>
                 <div className="address-add small">
                     <img src={add_icon} alt="" />
-                    <span style={{ marginLeft: "10px" }}>新增地址</span>
+                    <span style={{ marginLeft: "10px" }} onClick={() => { setAddVisible(true) }}>新增地址</span>
                 </div>
             </div>
             {
@@ -66,6 +68,7 @@ export default function AddressSelect() {
                         </div>
                     </div>
             }
+            <AddressModal visible={addVisible} onClose={() => { setAddVisible(false) }} />
         </div>
     )
 }
