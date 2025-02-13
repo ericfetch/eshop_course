@@ -3,13 +3,14 @@ import React, { useState } from 'react';
 import './index.css';
 
 export default function Select(props) {
-    const { options = [] } = props;
-    const [selectedOption, setSelectedOption] = useState(options[0]);
+    const { defaultValue,options = [] ,onChange=()=>{}} = props;
+    const [selectedOption, setSelectedOption] = useState(defaultValue || options[0]);
     const [isOpen, setIsOpen] = useState(false);
 
     const handleClick = (option) => {
         setSelectedOption(option);
         setIsOpen(false);
+        onChange(option)
     }
     return (
         <div className='form-select' >
