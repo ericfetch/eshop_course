@@ -14,21 +14,24 @@ import Cart from './pages/Cart';
 import DoOrder from './pages/DoOrder';
 import OrderSuccess from './pages/OrderSuccess';
 import Todo from './pages/Todo';
+import RouteProxy from './layout/Route-proxy';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <Provider store={store}>
     <BrowserRouter>
-      <Routes>
-        <Route path='/' element={<HomeLayout />}>
-          <Route index element={<Home></Home>}></Route>
+      <Routes >
+        <Route element={<RouteProxy />}> 
+          <Route path='/' element={<HomeLayout />}>
+            <Route index element={<Home></Home>}></Route>
+          </Route>
+          <Route path='/search' element={<Search />}></Route>
+          <Route path='/detail' element={<GoodsDetail />}></Route>
+          <Route path='/cart' element={<Cart />}></Route>
+          <Route path='/order' element={<DoOrder />}></Route>
+          <Route path='/order/success' element={<OrderSuccess />}></Route>
+          <Route path='/todo' element={<Todo />}></Route>
         </Route>
-        <Route path='/search' element={<Search />}></Route>
-        <Route path='/detail' element={<GoodsDetail />}></Route>
-        <Route path='/cart' element={<Cart />}></Route>
-        <Route path='/order' element={<DoOrder />}></Route>
-        <Route path='/order/success' element={<OrderSuccess />}></Route>
-        <Route path='/todo' element={<Todo />}></Route>
       </Routes>
     </BrowserRouter>
   </Provider>
