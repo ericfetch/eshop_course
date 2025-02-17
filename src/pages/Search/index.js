@@ -8,9 +8,7 @@ export default function Search() {
     return (
         <div className="search-page">
             <CartSuspend />
-            <div className="heard-container">
-                <Head logoType={2}></Head>
-            </div>
+        
 
             <div className="search-list">
             <GoodsCard></GoodsCard>

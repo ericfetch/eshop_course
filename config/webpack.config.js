@@ -272,6 +272,10 @@ module.exports = function (webpackEnv) {
               // Pending further investigation:
               // https://github.com/terser-js/terser/issues/120
               inline: 2,
+              drop_console: true,
+              drop_debugger: true,
+              // Disabled because of an issue with Terser breaking valid code:
+              // Pending further investigation:
             },
             mangle: {
               safari10: true,

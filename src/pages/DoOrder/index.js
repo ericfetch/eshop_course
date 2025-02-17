@@ -14,9 +14,7 @@ export default function DoOrder() {
     }
     return (
         <div className="do-order">
-            <div className="head-container">
-                <Head  logoType={2} />
-            </div>
+         
             <div className="order-container">
                 <div className="left">
 

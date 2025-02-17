@@ -6,9 +6,7 @@ import './index.css'
 export default function OrderSuccess() {
     return (
         <div className="order-success">
-            <div className="head-container">
-                <Head logoType={2} />
-            </div>
+           
             <div className='success-container'>
                 <img className='success-icon' src={success_icon} alt="" />
                 <div style={{marginTop: '20px'}}>下单成功！</div>

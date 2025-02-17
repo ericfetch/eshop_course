@@ -1,23 +1,25 @@
 
-import { useNavigate } from 'react-router'
-import './index.css'
-import cartIcon from '../../assets/cart_icon.png'
+import React from'react';
+import useNavigate from '../../CRoute/useNavigate';
+import './index.css';
+import cartIcon from '../../assets/cart_icon.png';
 
 export default function CartSuspend() {
 
-    const navigator = useNavigate();
+  const navigator = useNavigate();
      
-    const handleToCartPage = () => {
-        navigator('/cart')
-    }
+  const handleToCartPage = () => {
+    
+    navigator('/cart');
+  };
 
-    return (
+  return (
 
-        <div className='cart-suspend' onClick={handleToCartPage} >
+    <div className='cart-suspend' onClick={handleToCartPage} >
             
-            <img className='cart-icon' src={cartIcon} alt="" srcset="" />
-            <div>购物车</div>
-            <div className='suspend-count'>12</div>
-        </div>
-    )
+      <img className='cart-icon' src={cartIcon} alt="" srcSet="" />
+      <div>购物车</div>
+      <div className='suspend-count'>12</div>
+    </div>
+  );
 }

@@ -21,9 +21,7 @@ export default function GoodsDetail() {
     return (
         <div className="goods-detail">
             <CartSuspend/>
-            <div className='head-container'>
-                <Head logoType={2}></Head>
-            </div>
+         
             <div className="detail-content">
                 <div className="left">
                     <div className="goods-info">
