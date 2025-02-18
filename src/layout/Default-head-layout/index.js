@@ -1,15 +1,17 @@
-import { Outlet } from "react-router";
-import Head from "../../components/Head/index";
-import './index.css'
+import React from'react';
+import { Outlet } from 'react-router';
+import Head from '../../components/Head/index';
+import './index.css';
 
-export default function HomeLayout() {
+export default function DefaultHeadLayout() {
 
-    return (
-        <div className="default-head-layout-container">
-             <div className="head-container">
-                            <Head logoType={2}></Head>
-            </div>
-            <Outlet />
-        </div>
-    )
+  return (
+    <div className="default-head-layout-container">
+      <div className="head-container">
+        <Head logoType={2}></Head>
+      </div>
+      {/* 所有的子级route都会渲染在这里 */}
+      <Outlet />
+    </div>
+  );
 }

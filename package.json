@@ -147,6 +147,8 @@
       "react-app"
     ]
   },
+  "proxy":"http://demo1502189.mockable.io",
+  
   "devDependencies": {
     "@eslint/js": "^9.20.0",
     "eslint": "^8.57.1",

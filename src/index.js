@@ -17,12 +17,12 @@ import Todo from './pages/Todo';
 import RouteProxy from './layout/Route-proxy';
 import DefaultHheadLayout from './layout/Default-head-layout';
 
-import CRoute from './CRoute';
+// import CRoute from './CRoute';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <Provider store={store}>
-    {/* <BrowserRouter>
+    <BrowserRouter>
       <Routes >
         <Route element={<RouteProxy />}>
           <Route path='/' element={<HomeLayout />}>
@@ -38,8 +38,8 @@ root.render(
           </Route>
         </Route>
       </Routes>
-    </BrowserRouter> */}
-    <CRoute>
+    </BrowserRouter>
+    {/* <CRoute>
       <CRoute path='/search' element={<Search />}></CRoute>
       <CRoute path='/detail' element={<GoodsDetail />}></CRoute>
       <CRoute path='/cart' element={<Cart />}></CRoute>
@@ -48,6 +48,6 @@ root.render(
       <CRoute path='/todo' element={<Todo />}>
         <CRoute path='/ss' element={<div>ss</div>}></CRoute>
       </CRoute>
-    </CRoute>
+    </CRoute> */}
   </Provider>
 );

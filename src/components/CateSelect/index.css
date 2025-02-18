@@ -48,6 +48,10 @@
             font-weight: 700;
             color: #1F2022;
         }
+        .cate-select-pannel-content{
+            display: flex;
+            margin-bottom: 20px;
+        }
         .cate-select-pannel-item{
             font-size: 16px;
             color:  #707379;

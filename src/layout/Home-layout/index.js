@@ -1,11 +1,12 @@
-import { Outlet ,useLocation} from "react-router";
-import './index.css'
+import React from 'react';
+import { Outlet  } from 'react-router';
+import './index.css';
 
 export default function HomeLayout() {
 
-    return (
-        <div className="home-layout-container">
-            <Outlet />
-        </div>
-    )
+  return (
+    <div className="home-layout-container">
+      <Outlet />
+    </div>
+  );
 }

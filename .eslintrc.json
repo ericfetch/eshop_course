@@ -54,7 +54,8 @@
     
     // 如果变量一旦被赋值后不再改变，则要求使用const声明该变量
     "prefer-const": ["warn", { "destructuring": "any", "ignoreReadBeforeAssign": true }],
-    "react/prop-types": 0
+    "react/prop-types": 0,
+    "no-debugger":"off"
   },
   "plugins": [
     "react" // 如果是React项目，请包含此行
