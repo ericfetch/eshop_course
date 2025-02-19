@@ -1,0 +1,82 @@
+.user-login {
+  width: 300px;
+  height: 460px;
+  background-color: #fff;
+  padding: 30px;
+  box-sizing: border-box;
+  border-radius: 15px;
+}
+.user-login .avatar {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  overflow: hidden;
+  object-fit: cover;
+  object-position: center;
+  margin-right: 10px;
+  border: 2px solid #fff;
+  background-color: #F0F0FB;
+  filter: drop-shadow(0px 0px 14px rgba(0, 0, 0, 0.1));
+}
+.user-login .user-base-info {
+  display: flex;
+  align-items: center;
+}
+.user-login .user-base-info .name {
+  color: #1F2022;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+}
+.user-login .user-base-info .sub-title {
+  margin-top: 10px;
+  color: var(--, #707379);
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+}
+.user-login .tips {
+  margin-top: 100px;
+}
+.user-login .tips .title {
+  color: var(--, #1F2022);
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+}
+.user-login .tips .sub-title {
+  margin-top: 10px;
+  color: var(--, #707379);
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+}
+.user-login .action {
+  margin-top: 100px;
+  display: flex;
+  height: 44px;
+  justify-content: center;
+  align-items: center;
+  color: #FFF;
+  font-size: 20px;
+  font-weight: 400;
+  border-radius: 25px;
+  background: linear-gradient(90deg, #3630EC 0%, #C8379D 100%);
+}
+.user-login .actions {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  margin-top: 50px;
+}
+.user-login .actions .action-item {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+

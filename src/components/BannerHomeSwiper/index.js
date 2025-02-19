@@ -8,6 +8,7 @@ import 'swiper/css/pagination';
 import { Pagination } from 'swiper/modules';
 import './index.css';
 
+
 import banner1 from '../../assets/banner01.png';
 
 export default function BannerHomeSwiper() {
@@ -17,6 +18,12 @@ export default function BannerHomeSwiper() {
       slidesPerView={1}
       modules={[Pagination]}
       className="mySwiper"
+      
+      pagination={{
+        clickable: true,
+        bulletActiveClass: 'custom-swiper-pagination-bullet-active',
+        bulletClass: 'custom-swiper-pagination-bullet'
+      }}
     >
       <SwiperSlide>
         <img src={banner1} alt="" srcSet="" />
