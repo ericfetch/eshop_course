@@ -49,6 +49,7 @@
         height: 70px;
         border-radius: 10px;
         overflow: hidden;
+
         img {
             width: 70px;
         }
@@ -78,4 +79,84 @@
             color: #FE2E00;
         }
     }
+
+    .carrot-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .image-wrapper {
+        position: relative;
+        width: 256px;
+        /* 16rem = 256px */
+        height: 256px;
+        border-radius: 0.5rem;
+        overflow: hidden;
+    }
+
+    .image-wrapper img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .carrot-text {
+        margin-top: 0.75rem;
+        font-size: 1.125rem;
+        /* 18px */
+        color: #374151;
+        /* gray-700 */
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        max-width: 256px;
+    }
+
+    /* 可选的悬停效果 */
+    .image-wrapper:hover img {
+        transform: scale(1.05);
+        transition: transform 0.3s ease;
+    }
+}
+
+.carrot-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+.image-wrapper {
+    position: relative;
+    width: 256px;
+    /* 16rem = 256px */
+    height: 256px;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carrot-text {
+    margin-top: 0.75rem;
+    font-size: 1.125rem;
+    /* 18px */
+    color: #374151;
+    /* gray-700 */
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    max-width: 256px;
+}
+
+/* 可选的悬停效果 */
+.image-wrapper:hover img {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
 }
