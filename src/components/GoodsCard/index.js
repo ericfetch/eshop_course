@@ -3,6 +3,7 @@ import './index.css';
 import goods01 from '../../assets/goods01.png';
 import useNavigate from '../../CRoute/useNavigate.js';
 import useAppear from '../../Hooks/useAppear.js';
+import axios from 'axios';
 export default function GoodsCard(props) {
   const { type = 1 } = props;
   const navigator = useNavigate();
@@ -18,6 +19,16 @@ export default function GoodsCard(props) {
   
   useEffect(() => {
     console.log('isAppear',isAppear);
+    
+  },[isAppear]);
+
+
+  useEffect(() => {
+    if(isAppear){
+      axios.get('https://xxx.com/api/goods').then(res => {
+        console.log(res);
+      });
+    }
     
   },[isAppear]);
 
@@ -73,7 +84,7 @@ export default function GoodsCard(props) {
   return (
     <div ref={ref}>
       {
-        renderGoodsCard()
+        isAppear&& renderGoodsCard()
       }
     </div>
   );
