@@ -64,38 +64,60 @@ export default function Calendar() {
   const renderCalendar = () => {
     const taskPositions = new Map();
     const tasksByDate = new Map();
-    const tasksByWeek = new Array(6).fill(0); // 用于存储每周的最大任务数
+    const tasksByWeek = new Array(6).fill(0);
     
-    // 首先将任务按日期分组
-    tasks.forEach(task => {
-      const start = new Date(task.startDate);
-      const end = new Date(task.endDate);
-      for (let date = new Date(start); date <= end; date.setDate(date.getDate() + 1)) {
-        const dateKey = date.toISOString().split('T')[0];
-        if (!tasksByDate.has(dateKey)) {
-          tasksByDate.set(dateKey, []);
+    // 将任务按日期分组
+    const groupTasksByDate = () => {
+      tasks.forEach(task => {
+        const start = new Date(task.startDate);
+        const end = new Date(task.endDate);
+        for (let date = new Date(start); date <= end; date.setDate(date.getDate() + 1)) {
+          const dateKey = date.toISOString().split('T')[0];
+          if (!tasksByDate.has(dateKey)) {
+            tasksByDate.set(dateKey, []);
+          }
+          tasksByDate.get(dateKey).push(task.id);
         }
-        tasksByDate.get(dateKey).push(task.id);
-        
-        // 计算该日期在日历中的周数（0-5）
-        const firstDayInWeek = ZellerWeekDay(year, month + 1, 1);
-        const dayOfMonth = date.getDate();
-        const weekIndex = Math.floor((firstDayInWeek + dayOfMonth - 1) / 7);
-        if (date.getMonth() === month && weekIndex >= 0 && weekIndex < 6) {
-          tasksByWeek[weekIndex] = Math.max(tasksByWeek[weekIndex], tasksByDate.get(dateKey).length);
-        }
-      }
-    });
+      });
+    };
 
+    // 计算每周的最大任务数
+    const calculateMaxTasksPerWeek = () => {
+      const firstDayOfMonth = ZellerWeekDay(year, month, 1);
+      
+      tasksByDate.forEach((taskIds, dateKey) => {
+        const date = new Date(dateKey);
+        if (date.getMonth() === month && date.getFullYear() === year) {
+          const dayOfMonth = date.getDate();
+          // 计算在日历网格中的位置
+          const dayPosition = firstDayOfMonth + dayOfMonth - 1;
+          // 计算所在的周索引
+          const weekIndex = Math.floor(dayPosition / 7);
+          
+          if (weekIndex >= 0 && weekIndex < 6) {
+            tasksByWeek[weekIndex] = Math.max(tasksByWeek[weekIndex], taskIds.length);
+          }
+        }
+      });
+    };
+
+    groupTasksByDate();
+    calculateMaxTasksPerWeek();
+
+    // 遍历所有任务，为每个任务分配一个垂直位置
     tasks.forEach(task => {
       const start = new Date(task.startDate);
       const end = new Date(task.endDate);
-      let maxPosition = -1;
+      let maxPosition = -1;  // 记录当前任务的最大位置值
       
+      // 遍历任务的每一天
       for (let date = new Date(start); date <= end; date.setDate(date.getDate() + 1)) {
+        // 将日期转换为 YYYY-MM-DD 格式的字符串作为键
         const dateKey = date.toISOString().split('T')[0];
+        // 获取该日期上的所有任务ID
         const dayTasks = tasksByDate.get(dateKey) || [];
         
+        // 收集该日期上已被占用的位置
         const usedPositions = new Set();
         dayTasks.forEach(taskId => {
           if (taskPositions.has(taskId)) {
@@ -103,13 +125,17 @@ export default function Calendar() {
           }
         });
         
+        // 找到最小的未被占用的位置
         let position = 0;
         while (usedPositions.has(position)) {
           position++;
         }
+        // 更新当前任务的最大位置值
         maxPosition = Math.max(maxPosition, position);
       }
       
+      // 将任务的最终位置存储到 taskPositions 映射中
+      // 这个位置将用于计算任务在日历单元格中的垂直偏移量
       taskPositions.set(task.id, maxPosition);
     });
 
